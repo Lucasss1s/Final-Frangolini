@@ -1,0 +1,1702 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',  sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Header and footer */
+
+.nav{
+    background-color: rgb(43, 44, 44);
+    height: 37px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    text-align:center;
+
+    animation: animacion-titulo linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px; 
+    }
+@keyframes animacion-titulo {
+    to {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: black;
+    }
+}
+.nav li{
+    display: inline-block;
+    padding: 7.5px 0 0 40px;
+    font-size: 13px;
+    font-family: "Lato", sans-serif;
+    transition: .5s;
+}
+.nav li:hover{
+    font-size: 14.5px;
+    transition: .5s;
+}
+.nav p{
+    color: rgb(214, 214, 214);
+}
+.nav img{
+    height: 14px;
+    width: 14px;
+    margin: 1px 0 0 0;
+    transition: .5s;
+}
+.nav img:hover{
+    height: 16px;
+    width: 16px;
+    transition: .5s;
+}
+
+.navbar{
+    display: none;
+    background-color: rgb(43, 44, 44);
+    height:100%;
+}
+.navbar ul{
+    font-size: 16px;
+    padding-top: 5px;
+}
+.navbar li{
+    list-style-type: none;
+}
+.navbar p{
+    padding: 20px 0 0 7px;
+    color: white;
+}
+.navbar img{
+    height: 20px;
+    width: 20px;
+}
+
+.footer-division-1{
+    background-color: white;
+    height: 35px;
+}
+.footer-section-1{
+    padding: 0 500px 0 500px;
+    background-color: rgb(248, 248, 248);
+    color: darkgray;
+    font-size: 12px;
+}
+.footer-section-1 p{
+    padding-top: 20px;
+}
+.footer-section-1-p{
+    padding-bottom: 50px;
+}
+.footer-division-2{
+    height: 2px;
+    width: 920px;
+    background-color: darkgray;
+    margin: auto;
+}
+
+.footer-section-2{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+}
+.footer-section-2 i{
+    font-size: 25px;
+    letter-spacing: 80px;
+    color: darkgray;
+}
+.footer-section-2 i:hover{
+    color: black;
+}
+
+
+
+
+
+/* Index */
+.index-section-1{
+    background-color: black;
+    height: 670px;
+    text-align: center;
+}
+.index-section-1-h1{
+    color: white;
+    font-size: 60px;
+    padding-top: 60px;
+}
+.index-section-1-p-1{
+    color: white;
+    font-size: 30px;
+}
+.index-section-1-a-1{
+    display: flex;
+    justify-content: center;
+}
+.index-section-1-a-1 p{
+    color: rgb(41, 152, 255);
+    font-size: 18px;
+    padding-top: 30px;
+    margin: 0 18px;
+    font-weight: 600;
+}
+.index-section-1-a-1 p:hover{
+    text-decoration: underline;
+}
+.index-section-1-img-1{
+    height: 300px;
+    margin: 80px 0 0 250px ;
+}
+
+.index-division{
+    height: 15px;
+    background-color: white;
+}
+
+.index-section-2{
+    background-color: rgb(243, 243, 243);
+    height: 700px;
+    text-align: center;
+}
+.index-section-2-div{
+    background: url(../img/appleVision.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.index-section-2-h2-1{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    padding: 530px 0 0 0;
+}
+.index-section-2-h2-1 img{
+    height: 55px;
+    width: 55px;
+    padding: 6px 0 0 0;
+}
+.index-section-2-h2-1 h2{
+    color: rgb(0, 0, 0);
+    font-size: 55px;
+    padding: 0 0 0 10px;
+}
+.indexsection-2-p-1{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.index-section-2-a-1{
+    display: flex;
+    justify-content: center;
+}
+.index-section-2-a-1 p{
+    color: rgb(41, 152, 255);
+    font-size: 20px;
+    padding: 15px 0 0 0;
+    margin: 0 18px;
+    font-weight: 600;
+}
+.index-section-2-a-1 p:hover{
+    text-decoration: underline;
+}
+
+.index-section-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "article1 article2"
+    "article3 article4";    
+    grid-gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
+}
+.index-section-3-article{
+    height: 550px;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all .9s;
+    text-align: center;
+}
+.index-section-3-article:hover{
+    transform: scale(1.02);
+}
+.index-section-3-article-1{
+    background: url(../img/appleWatch.jpg);
+    background-position: center;
+    /* lo quice poner en el contenedor padre pero no me lo agarra por algún motivo */
+    grid-area: article1;
+}
+.index-section-3-article-2{
+    background: url(../img/appleMac.jpg);
+    background-position: center;
+    grid-area: article2;
+}
+.index-section-3-article-3{
+    background: url(../img/ipadApple.jpg);
+    background-position: center;
+    grid-area: article3;
+}
+.index-section-3-article-4{
+    background: url(../img/airpodsPro.jpg);
+    background-position: center;
+    grid-area: article4;
+}
+.index-section-3-h2-1{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 0;
+}
+.index-section-3-h2-1 img{
+    height: 33px;
+    width: 40px;
+}
+.index-section-3-h2-1 h2{
+    font-size: 30px;
+    padding: 2px 0 0 4px;
+}
+.index-section-3-article-1-h2-2{
+    color: rgb(255, 255, 255);
+}
+.index-section-3-article-3-h2-1{
+    color: rgb(0, 0, 0);
+}
+.index-section-3-h2-2{
+    font-size: 30px;
+    padding: 60px 0 0 0;
+}
+.index-section-3-article-2-h2-2{
+    color: rgb(0, 0, 0);
+}
+.index-section-3-article-4-h2-2{
+    color: white;
+}
+.index-section-3-p-1{
+    font-size: 12px;
+    text-align: center;
+    padding: 3px 0 0 0;
+}
+.index-section-3-article-1-p-1{
+    color: red;
+}
+.index-section-3-article-2-p-1{
+    color: rgb(0, 255, 255);
+}
+.index-section-3-article-3-span-1{
+    color: rgb(61, 109, 163);
+}
+.index-section-3-article-3-span-2{
+    color: rgb(190, 59, 59);
+}
+.index-section-3-article-3-span-3{
+    color: rgb(212, 214, 65);
+}
+.index-section-3-article-3-span-4{
+    color: rgb(177, 177, 177);
+}
+.index-section-3-article-4-p-1{
+    color: white;
+}
+.index-section-3-article-4-span-1{
+    background: linear-gradient(to right, red, rgb(255, 176, 28), yellow, rgb(51, 255, 0), rgb(0, 119, 255), rgb(165, 38, 255), violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.index-section-3-p-2{
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+.index-section-3-article-1and4-p-2{
+    color: rgb(255, 255, 255);
+}
+.index-section-3-article-2and3-p-2{
+    color: rgb(0, 0, 0);
+}
+
+.index-section-3-a-1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.index-section-3-a-1 p{
+    color: rgb(41, 152, 255);
+    font-size: 1.8vh;
+    padding: 13px 20px 0 0;
+    font-weight: 600;
+}
+.index-section-3-a-1 p:hover{
+    text-decoration: underline;
+}
+
+
+.index-carrousel{
+    width: 1200px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.index-conteCarrousel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.index-itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.index-itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.151);
+    background-blend-mode: soft-light;
+}
+.index-itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px; 
+}
+.index-itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+#itemCarrousel-1{
+    background: url(../img/napoleonTv.jpg);
+    background-repeat: no-repeat;
+}
+.index-section-7-itemCarrousel-1{
+    padding: 530px 0 0 70px;
+    display: flex;
+}
+.index-section-7-itemCarrousel-1-buttom-1{
+    display: flex;
+    background-color: white; 
+    width: 150px;
+    height: 45px;
+    border-radius: 980px;
+    font-size: 15px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    
+}
+.index-section-7-itemCarrousel-1-buttom-1 a{
+    color: rgb(27, 25, 25);
+}
+.index-section-7-itemCarrousel-1-buttom-1 img{
+    height: 14px;
+    padding: 0 0 0 10px;
+}
+.index-section-7-itemCarrousel-1-img-2-media-1,
+.index-section-7-itemCarrousel-1-img-2-media-2,
+.index-section-7-itemCarrousel-1-img-2-media-3, 
+.index-section-7-itemCarrousel-1-img-2-media-4,
+.index-section-7-itemCarrousel-1-img-2-media-5{
+    display: none;
+}
+.index-section-7-itemCarrousel-1-img-2-media-2{
+    display: none;
+}
+.index-section-7-itemCarrousel-1-p-1{
+    color: white;
+    font-size: 20px;
+    padding: 15px 0 0 45px;
+}
+.index-section-7-itemCarrousel-1-span-1{
+    font-weight: 600;
+}
+.index-section-7-itemCarrousel-1-span-2{
+    padding: 3px 0 0 4px;
+}
+.index-section-7-itemCarrousel-1-img-2{
+    padding: 0 0 0 230px;
+}
+#itemCarrousel-2{
+    background: url(../img/constelationTv.jpg);
+}
+.index-section-7-itemCarrousel-1-img-3{
+    padding: 0 10px 0 400px;
+}
+#itemCarrousel-3{
+    background: url(../img/messiTv.jpg);
+}
+.index-section-7-itemCarrousel-1-img-4{
+    padding: 0 10px 0 443px;
+}
+#itemCarrousel-4{
+    background: url(../img/killersTv.jpg); 
+}
+.index-section-7-itemCarrousel-1-img-5{
+    padding: 0 10px 0 208px;
+}
+.index-conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.index-conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+    padding: 0 20px 0 20px;
+}
+.index-itemCarrouselArrows > a > i{
+    color: white;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:600px){
+    .nav {
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    .index-section-1{
+        height: 400px;
+    }
+    .index-section-1-img-1{
+        width: 320px;
+        height: 100px;
+        margin: 50px 0 0 0;
+    }
+    .index-section-1-h1{
+        font-size: 30px;
+    }
+    .index-section-1-p-1{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .index-section-1-a-1 p{
+        font-size: 12px;
+    }
+
+    .index-section-2{
+        width: 100%;
+        height: 300px;
+    }
+    .index-section-2-div{
+        background: url(../img/appleVision1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .index-section-2-h2-1{
+        padding: 230px 0 0 0;
+    }
+    .index-section-2-h2-1 img{
+        height: 25px;
+        width: 25px;
+        padding: 1px 0 0 0;
+    }
+    .index-section-2-h2-1 h2{
+        font-size: 25px;
+    }
+    .indexsection-2-p-1{
+        font-size: 10px;
+    }
+    .index-section-2-a-1 p{
+        font-size: 13px;
+        margin: 0 6px;
+        padding: 9px 0 0 0;
+    }
+
+    .index-section-3{
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "article1"
+            "article2"
+            "article4"        
+            "article3"; 
+    }
+    .index-section-3-article{
+        width: 320px;
+        height: 400px;
+    }
+    .index-section-3-article-1{
+        background: url(../img/appleWatch1.jpg);
+    }
+    .index-section-3-article-2{
+        background: url(../img/appleMac1.jpg);
+    }
+    .index-section-3-article-3{
+        background: url(../img/ipadApple1.jpg);
+    }
+    .index-section-3-article-4{
+        background: url(../img/airpodsPro1.jpg);
+    }
+    .index-section-3-h2-1,.index-section-3-h2-2 {
+        padding: 30px 0 0 0;
+    }
+
+    .index-carrousel{
+        width: 320px;
+        height: 600px;
+    }
+    #itemCarrousel-1{
+        background: url(../img/napoleonTv1.jpg);
+    }
+    #itemCarrousel-2{
+        background: url(../img/constelationTv1.jpg);
+    }
+    #itemCarrousel-3{
+        background: url(../img/messiTv1.jpg);
+    }
+    #itemCarrousel-4{
+        background: url(../img/killresTv1.jpg); 
+    }
+    .index-section-7-itemCarrousel-1{
+        padding: 0 0 0 0;
+    }
+    .index-section-7-itemCarrousel-1-buttom-1{
+        margin: 500px 0 0 90px;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-1,
+    .index-section-7-itemCarrousel-1-img-2-media-2,
+    .index-section-7-itemCarrousel-1-img-2-media-3, 
+    .index-section-7-itemCarrousel-1-img-2-media-4,
+    .index-section-7-itemCarrousel-1-img-2-media-5{
+        display: inline;
+        position: absolute;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-1{
+        height: 40px;
+        left: 35%;
+        top: 2%;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-2{
+        height: 40px;
+        left: 14%;
+        top: 12%;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-3{
+        height: 45px;
+        left: 15%;
+        top: 12%;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-4{
+        height: 70px;
+        left: 16%;
+        top: 14%;
+    }
+    .index-section-7-itemCarrousel-1-img-2-media-5{
+        height: 85px;
+        left: 24%;
+        top: 12%;
+    }
+    .index-section-7-itemCarrousel-1-img-3,
+    .index-section-7-itemCarrousel-1-img-4,
+    .index-section-7-itemCarrousel-1-img-5,
+    .index-section-7-itemCarrousel-1-p-1,
+    .index-section-7-itemCarrousel-1-img-2{
+        display: none;
+    }
+
+    .footer-section-1{
+        padding: 0 0 0 0;
+    }
+    .footer-division-2{
+        width: 90%;
+    }
+    .footer-section-2 i{
+        letter-spacing: 60px;
+        padding: 0 0 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* iPhone */
+.iPhone-section-1{
+    background-color: black;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.iPhone-section-1-p-1{
+    color: #f56300;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 0 10px 0 ;
+}
+.iPhone-section-1 h1{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 500;
+}
+.iPhone-section-1-img-1{
+    height: 120px;
+    padding: 15px 0 0 0 ;    
+}
+.iPhone-section-1-p-2{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+.iPhone-section-1-p-3{
+    color: white;
+    background: #0071e3;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+    margin: 25px 0 0 0;
+}
+.iPhone-section-1-p-3:hover{
+    background-color: #0682ff;
+}
+.iPhone-section-1-p-4{
+    color: rgb(41, 152, 255);
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    font-weight: 600;
+}
+.iPhone-section-1-p-4:hover{
+    text-decoration: underline;
+}
+.iPhone-section-1-img-2{
+    height: 280px;
+    padding: 20px 0 0 0 ;
+}
+
+.iPhone-section-2{
+    display: grid;
+    justify-content: center;
+}
+.iPhone-section-2-img-1{
+    background: url(../img/modeloIphone.jpg);
+    height: 800px;
+    width: 1412px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.iPhone-section-2-p-1{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 300px 0 0 200px;
+}
+.iPhone-section-2-p-2{
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 10px 0 0 200px;
+}
+.iPhone-section-2-p-3{
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 0 0 0 200px;
+}
+.iPhone-section-2-p-4{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 980px;
+    background-color: white;
+    margin: 10px 0 0 200px;
+}
+.iPhone-section-2-p-4:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.iPhone-section-3 h2{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    padding: 130px 0 0 0;
+    color: rgba(0, 0, 0, 0.904);
+}
+.iPhone-section-3-galery{
+    display: flex;
+}
+.iPhone-section-3-galery-article-1{
+    padding: 60px 0 0 450px;
+}
+.iPhone-section-3-galery-article-1-img-1{
+    width: 194px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-1-img-2{
+    width: 68px;
+    height: 14px;
+    margin: 15px 0 0 60px;
+}
+.iPhone-section-3-galery-article-1-p-1{
+    font-size: 13px;
+    color: rgb(231, 156, 15);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-1-h3-1{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.iPhone-section-3-galery-article-1-p-2{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-1-p-3{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.iPhone-section-3-galery-article-1-p-4{
+    color: white;
+    background: #0071e3;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 47px;
+    height: 20px;
+    line-height: 20px;
+    margin: 20px 0 0 70px;
+}
+.iPhone-section-3-galery-article-1-p-4:hover{
+    background: #0281ff;
+}
+.iPhone-section-3-galery-article-1-p-5{
+    color: rgb(2, 118, 226);
+    font-size: 14px;
+    padding: 15px 0 0 55px;
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-1-p-5:hover{
+    text-decoration: underline;
+}
+.iPhone-section-3-galery-article-1-div-1{
+    background-color: rgba(128, 128, 128, 0.795);
+    width: 194px;
+    height: 1px;
+    margin: 40px 0 40px 5px;
+}
+.iPhone-section-3-galery-article-1-p-6{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+.iPhone-section-3-galery-article-1-p-7{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-1-p-8{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-1-p-9{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+
+.iPhone-section-3-galery-article-2{
+    padding: 60px 0 0 50px;
+}
+.iPhone-section-3-galery-article-2-img-1{
+    width: 194px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-2-img-2{
+    width: 86px;
+    height: 14px;
+    margin: 15px 0 0 50px;
+}
+.iPhone-section-3-galery-article-2-p-1{
+    font-size: 13px;
+    color: rgb(231, 156, 15);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-h3-1{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.iPhone-section-3-galery-article-2-p-2{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-p-3{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-p-4{
+    color: white;
+    background: #0071e3;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 47px;
+    height: 20px;
+    line-height: 20px;
+    margin: 18px 0 0 70px;
+}
+.iPhone-section-3-galery-article-2-p-4:hover{
+    background: #0281ff;
+}
+.iPhone-section-3-galery-article-2-p-5{
+    color: rgb(2, 118, 226);
+    font-size: 14px;
+    padding: 15px 0 0 55px;
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-2-p-5:hover{
+    text-decoration: underline;
+}
+.iPhone-section-3-galery-article-2-div-1{
+    background-color: rgba(128, 128, 128, 0.795);
+    width: 194px;
+    height: 1px;
+    margin: 40px 0 40px 5px;
+}
+.iPhone-section-3-galery-article-2-p-6{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+.iPhone-section-3-galery-article-2-p-7{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-p-8{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-p-9{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+
+.iPhone-section-3-galery-article-3{
+    padding: 60px 0 0 50px;
+}
+.iPhone-section-3-galery-article-3-img-1{
+    width: 194px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-3-img-2{
+    width: 104px;
+    height: 14px;
+    margin: 15px 0 0 50px;
+}
+.iPhone-section-3-galery-article-3-p-1{
+    font-size: 13px;
+    color: rgb(231, 156, 15);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-h3-1{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.iPhone-section-3-galery-article-3-p-2{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 7px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-p-3{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-p-4{
+    color: white;
+    background: #0071e3;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 47px;
+    height: 20px;
+    line-height: 20px;
+    margin: 17px 0 0 70px;
+}
+.iPhone-section-3-galery-article-3-p-4:hover{
+    background: #0281ff;
+}
+.iPhone-section-3-galery-article-3-p-5{
+    color: rgb(2, 118, 226);
+    font-size: 14px;
+    padding: 13px 0 0 55px;
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-3-p-5:hover{
+    text-decoration: underline;
+}
+.iPhone-section-3-galery-article-3-div-1{
+    background-color: rgba(128, 128, 128, 0.795);
+    width: 194px;
+    height: 1px;
+    margin: 40px 0 40px 5px;
+}
+.iPhone-section-3-galery-article-3-p-6{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+.iPhone-section-3-galery-article-3-p-7{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-p-8{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-p-9{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+
+.iPhone-section-3-galery-article-4{
+    padding: 60px 0 0 50px;
+}
+.iPhone-section-3-galery-article-4-img-1{
+    width: 151px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-4-img-2{
+    width: 50px;
+    height: 14px;
+    margin: 15px 0 0 50px;
+}
+.iPhone-section-3-galery-article-4-p-1{
+    font-size: 13px;
+    color: rgb(231, 156, 15);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-h3-1{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.iPhone-section-3-galery-article-4-p-2{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 7px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-p-3{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-p-4{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-p-5{
+    color: white;
+    background: #0071e3;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 47px;
+    height: 20px;
+    line-height: 20px;
+    margin: 15px 0 0 50px;
+}
+.iPhone-section-3-galery-article-4-p-5:hover{
+    background: #0281ff;
+}
+.iPhone-section-3-galery-article-4-p-6{
+    color: rgb(2, 118, 226);
+    font-size: 14px;
+    padding: 11px 0 0 35px;
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-4-p-6:hover{
+    text-decoration: underline;
+}
+.iPhone-section-3-galery-article-4-div-1{
+    background-color: rgba(128, 128, 128, 0.795);
+    width: 194px;
+    height: 1px;
+    margin: 44px 0 38px 5px;
+}
+.iPhone-section-3-galery-article-4-p-7{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+.iPhone-section-3-galery-article-4-p-8{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-p-9{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-p-10{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 2px 0 0 0;
+}
+
+
+
+
+
+
+
+/* Mac */
+.Mac-section-1-h1 {
+    padding-top: 40px;
+}
+.Mac-section-1-h1 h1{
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+.Mac-section-1-h1 p{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.Mac-section-1 video{
+    overflow: hidden;
+    height: 760px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.Mac-section-1 video:hover{
+    height: 820px;
+    transition: 1s;
+}
+
+@media only screen and (min-width:1150px) and (max-width:1650px){
+    .Mac-section-1 video{
+        height: 560px;
+    }
+    .Mac-section-1 video:hover{
+        height: 620px;
+    }
+}
+@media only screen and (min-width:920px) and (max-width:1149px){
+    .Mac-section-1 video{
+        height: 460px;
+    }
+}
+@media only screen and (min-width:725px) and (max-width:919px){
+    .Mac-section-1 video{
+        height: 360px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:724px){
+    .Mac-section-1 video{
+        height: 260px;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:499px){
+    .Mac-section-1 video{
+        height: 160px;
+    }
+}
+
+
+.Mac-section-2-h2-1 h2{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+.Mac-section-2-h2-1 p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(2, 118, 226);
+    text-align: center;
+    line-height: 125px;
+}
+.Mac-section-2-h2-1 p:hover{
+    text-decoration: underline;
+}
+.Mac-section-2-targets{
+    width: 320px;
+    height: 270px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin: 60px 0 0 0;
+}
+.Mac-section-2-targets:hover{
+    background-color: rgb(234, 234, 234);
+}
+.Mac-section-2-targets-img-1{
+    font-size: 42px;
+    margin: 30px 0 0 20px;
+    color: rgba(0, 0, 0, 0.95);
+}
+.Mac-section-2-targets h3{
+    font-size: 26px;
+    margin: 10px 0 0 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.90);
+}
+.Mac-section-2-targets p{
+    font-size: 17px;
+    margin: 10px 0 0 20px;
+}
+.Mac-section-2-targets-img-2{
+    font-size: 37px;
+    padding: 0 0 0 270px;
+    color: rgba(0, 0, 0, 0.836);
+}
+.Mac-section-2-targets-img-2:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+.Mac-section-3{
+    background-color: black;
+    height: 1150px;
+    text-align: center;
+}
+.Mac-section-3-mobile{
+    display: none;
+}
+.Mac-section-3 h2{
+    font-size: 60px;
+    color: white;
+}
+.Mac-section-3-galery-1{
+    position: relative;
+    background: url(../img/galery1.jpg);
+    height: 420px;
+    width: 700px;
+    background-repeat: no-repeat;
+    margin: 350px 0 0 600px;
+}
+.Mac-section-3-galery-2{
+    position: relative;
+    background: url(../img/galery2.png);
+    height: 325px;
+    width: 400px;
+    background-repeat: no-repeat;
+    top: 60%;
+    left: 105%;
+}
+.Mac-section-3-galery-3{
+    position: relative;
+    background: url(../img/galery3.png);
+    height: 370px;
+    width: 400px;
+    background-repeat: no-repeat;
+    bottom: 60%;
+    right: 35%;
+}
+.Mac-section-3-galery-4{
+    position: relative;
+    background: url(../img/galery4.png);
+    height: 315px;
+    width: 500px;
+    background-repeat: no-repeat;
+    bottom: 9%;
+    right: 83%;
+}
+.Mac-section-3-galery-5{
+    position: relative;
+    background: url(../img/galery5.png);
+    height: 240px;
+    width: 320px;
+    background-repeat: no-repeat;
+    bottom: 58%;
+    left: 56%;
+}
+.Mac-section-3-galery-6{
+    position: relative;
+    background: url(../img/galery6.png);
+    height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+    bottom: 200%;
+    left: 51%;
+}
+.Mac-section-3-galery-7{
+    position: relative;
+    background: url(../img/galery7.png);
+    height: 300px;
+    width: 360px;
+    background-repeat: no-repeat;
+    bottom: 45%;
+    left: 45%;
+}
+.Mac-section-3-galery-8{
+    position: relative;
+    background: url(../img/galery8.png);
+    height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+    bottom: 287%;
+    right: 30%;
+}
+@media only screen and (min-width:1431px) and (max-width:1763px){
+    .Mac-section-3-galery-2{
+        left: 75%;
+    }
+    .Mac-section-3-galery-4{
+        right: 50%;
+    }
+    .Mac-section-3-galery-1{
+        margin-left: 500px;
+    }
+}
+@media only screen and (min-width:991px) and (max-width:1430px){
+    .Mac-section-3-galery-2{
+        left: 55%;
+    }
+    .Mac-section-3-galery-4{
+        right: 30%;
+    }
+    .Mac-section-3-galery-6{
+        left: 30%;
+    }
+    .Mac-section-3-galery-1{
+        margin-left: 350px;
+    }
+}
+@media only screen and (min-width:991px) and (max-width:1150px){
+    .Mac-section-3-galery-1{
+        margin-left: 200px;
+    }
+}
+.Mac-section-3-mobile p{
+    color: #86868b;
+}
+.Mac-section-3-mobile strong{
+    color: white;
+}
+.Mac-section-3-mobile img{
+    width: 320px;
+}
+@media only screen and (min-width:320px) and (max-width:990px){
+    .Mac-section-3-galery{
+        display: none;
+    }
+    .Mac-section-3{
+        height: 100%;
+    }
+    .Mac-section-3-mobile{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/*  AirPods  */
+.AirPods-main{
+    background-color: rgb(248, 248, 248);
+}
+.AirPods-section-1 video{
+    position: relative;
+    overflow: hidden;
+    margin: 10vh 0 0 9vw;
+    border-radius: 20px;
+    transition: 1s;
+    height: 78vh;
+}
+.AirPods-section-1 video:hover{
+    height: 80vh;
+    margin: 9vh 0 0 8vw;
+    transition: 1s;
+}
+.AirPods-section-1 h1{
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    color: white;
+    font-size: 12vh;
+    font-weight: 600;
+}
+.Airpods-section-1-p-1{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: 600;
+}
+.Airpods-section-1-a{
+    display: flex;
+}
+.Airpods-section-1-a-1{
+    position: absolute;
+    top: 79%;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+}
+.Airpods-section-1-a-1:hover{
+    background-color: rgb(211, 211, 211);
+}
+.Airpods-section-1-a-2{
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+}
+.Airpods-section-1-a-2 i{
+    font-size: 1.5vh;
+}
+.Airpods-section-1-a-2:hover{
+    text-decoration: underline;
+}
+
+.AirPods-section-2{
+    background: url(../img/Airpods3generacion.jpg);
+    height: 77vh;
+    width: 80vw;
+    margin: 5vh 0 0 10vw;
+    border-radius: 18px;
+}
+.AirPods-section-2 h2{
+    font-size: 14vh;
+    font-weight: 600;
+    text-align: center;
+    padding: 29vh 0 0 0;
+}
+.Airpods-section-2-p-1{
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: 600;
+}
+.Airpods-section-2-p-2{
+    font-size: 2.2vh;
+    text-align: center;
+    font-weight: 500;
+    margin: .5vh 0 0 0;
+}
+.Airpods-section-2-a{
+    display: flex;
+}
+.Airpods-section-2-a-1{
+    color: rgb(255, 255, 255);
+    background: #0071e3;
+    text-align: center;
+    font-size: 1.8vh;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+    margin: 20vh 0 0 34vw;
+}
+.Airpods-section-2-a-1:hover{
+    background: #0281ff;
+}
+.Airpods-section-2-a-2{
+    color: #0071e3;
+    font-size: 2vh;
+    text-align: center;
+    margin: 20.7vh 0 0 2vw;
+}
+.Airpods-section-2-a-2 i{
+    font-size: 1.5vh;
+}
+.Airpods-section-2-a-2:hover{
+    text-decoration: underline;
+}
+
+.AirPods-section-3{
+    background: url(../img/Airpods2generacion.jpg);
+    height: 77vh;
+    width: 80vw;
+    margin: 5vh 0 0 10vw;
+    border-radius: 18px;
+}
+.AirPods-section-3 h2{
+    font-size: 14vh;
+    font-weight: 600;
+    text-align: center;
+    padding: 29vh 0 0 0;
+}
+.Airpods-section-3-p-1{
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: 600;
+}
+.Airpods-section-3-p-2{
+    font-size: 2.2vh;
+    text-align: center;
+    font-weight: 500;
+    margin: .5vh 0 0 0;
+}
+.Airpods-section-3-a{
+    display: flex;
+}
+.Airpods-section-3-a-1{
+    color: rgb(255, 255, 255);
+    background: #0071e3;
+    text-align: center;
+    font-size: 1.8vh;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+    margin: 20vh 0 0 34vw;
+}
+.Airpods-section-3-a-1:hover{
+    background: #0281ff;
+}
+.Airpods-section-3-a-2{
+    color: #0071e3;
+    font-size: 2vh;
+    text-align: center;
+    margin: 20.7vh 0 0 2vw;
+}
+.Airpods-section-3-a-2 i{
+    font-size: 1.5vh;
+}
+.Airpods-section-3-a-2:hover{
+    text-decoration: underline;
+}
+
+.AirPods-section-4{
+    position: relative;
+    background: white;
+    height: 77vh;
+    width: 80vw;
+    margin: 5vh 0 0 10vw;
+    border-radius: 18px;
+}
+.Airpods-section-4-img-1{
+    position: absolute;
+    top: 7%;
+    left: 32.5%;
+}
+.AirPods-section-4 h2{
+    font-size: 20vh;
+    font-weight: 600;
+    text-align: center;
+    padding: 29vh 0 0 0;
+}
+.Airpods-section-4-p-1{
+    font-size: 2.2vh;
+    font-weight: 500;
+    text-align: center;
+    margin: .5vh 0 0 0;
+}
+.Airpods-section-4-a{
+    display: flex;
+}
+.Airpods-section-4-a-1{
+    color: rgb(255, 255, 255);
+    background: #0071e3;
+    text-align: center;
+    font-size: 1.8vh;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+    margin: 20vh 0 0 35vw;
+}
+.Airpods-section-4-a-1:hover{
+    background: #0281ff;
+}
+.Airpods-section-4-a-2{
+    color: #0071e3;
+    font-size: 2vh;
+    text-align: center;
+    margin: 20.7vh 0 0 2vw;
+}
+.Airpods-section-4-a-2 i{
+    font-size: 1.5vh;
+}
+.Airpods-section-4-a-2:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* Airpods  */
+.AppleID-section-1{
+    padding: 8vh 0 0 37.5vw;
+}
+.AppleID-section-1-div{
+    width: 25vw;
+    text-align: center;
+}
+.AppleID-section-1 img{
+    margin: 8vh 0 8vh 0;
+}
+.AppleID-section-1 h1{
+    font-size: 3.5vh;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.788);
+}
+.AppleID-section-1 h2{
+    font-size: 2vh;
+    font-weight: 500;
+    text-align: center;
+    padding: 2vh 0 0 0;
+    color: rgba(0, 0, 0, 0.788);
+}
+.AppleID-section-1-div-1{
+    text-align: center;
+}
+.AppleID-section-1-input-1{
+    border: .1px solid black;
+    margin: 2.8vh 0 0 0;
+    padding: 1.5vh 1.5vw;
+    font-size: 1.3vh;
+    border-radius: 8px;
+    width: 25vw;
+}
+.AppleID-section-1-input-2{
+    border: .1px solid black;
+    margin: 1.8vh 0;
+    padding: 1.5vh 1.5vw;
+    font-size: 1.3vh;
+    border-radius: 8px;
+    width: 25vw;
+}
+.AppleID-section-1-input-3{
+    margin: 8vh 0 1vh 0;
+    color: rgba(0, 0, 0, 0.678);
+}
+.AppleID-section-1-p-1{
+    text-align: center;
+    color: rgb(28, 153, 255);
+    margin: 3vh 0 0 0;
+}
+.AppleID-section-1-p-1:hover{
+    text-decoration: underline;
+}
+.AppleID-section-1-a-1{
+    display: flex;
+    margin: 1.2vh 0 0 0;
+    justify-content: center;
+}
+.AppleID-section-1-p-2{
+    color: rgba(0, 0, 0, 0.767);
+}
+.AppleID-section-1-p-3{
+    color: rgb(28, 153, 255);
+    margin: 0 0 0 .3vw;
+}
+.AppleID-section-1-p-3:hover{
+    text-decoration: underline;
+}
+.AppleID-section-1-button-1{
+    background-color: #5b32b9;
+    color: #fff;
+    font-size: 1.2vh;
+    padding: 1vh 2vw;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 2vh 0 0 0;
+}
+.AppleID-section-1-button-1:hover{
+    background-color: #6635d8;
+}
