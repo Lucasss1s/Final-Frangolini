@@ -7,7 +7,6 @@
 }
 
 /* Header and footer */
-
 .nav{
     background-color: rgb(43, 44, 44);
     height: 37px;
@@ -79,10 +78,11 @@
     height: 35px;
 }
 .footer-section-1{
-    padding: 0 500px 0 500px;
     background-color: rgb(248, 248, 248);
     color: darkgray;
     font-size: 12px;
+    text-align: center;
+    padding: 0 20% 0 20%;
 }
 .footer-section-1 p{
     padding-top: 20px;
@@ -92,7 +92,7 @@
 }
 .footer-division-2{
     height: 2px;
-    width: 920px;
+    width: 90%;
     background-color: darkgray;
     margin: auto;
 }
@@ -146,7 +146,11 @@
 }
 .index-section-1-img-1{
     height: 300px;
-    margin: 80px 0 0 250px ;
+    margin: 80px 0 0 0;
+}
+.index-section-1-img-1-mobile{
+    display: none;
+    height: 300px;
 }
 
 .index-division{
@@ -178,7 +182,7 @@
 }
 .index-section-2-h2-1 h2{
     color: rgb(0, 0, 0);
-    font-size: 55px;
+    font-size: 50px;
     padding: 0 0 0 10px;
 }
 .indexsection-2-p-1{
@@ -200,17 +204,7 @@
     text-decoration: underline;
 }
 
-.index-section-3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "article1 article2"
-    "article3 article4";    
-    grid-gap: 20px; 
-    justify-items: center; 
-    align-items: center; 
-}
+
 .index-section-3-article{
     height: 550px;
     width: 900px;
@@ -219,6 +213,7 @@
     border-radius: 10px;
     transition: all .9s;
     text-align: center;
+    margin: 0 0 20px 0;
 }
 .index-section-3-article:hover{
     transform: scale(1.02);
@@ -226,23 +221,19 @@
 .index-section-3-article-1{
     background: url(../img/appleWatch.jpg);
     background-position: center;
-    /* lo quice poner en el contenedor padre pero no me lo agarra por algún motivo */
     grid-area: article1;
 }
 .index-section-3-article-2{
     background: url(../img/appleMac.jpg);
     background-position: center;
-    grid-area: article2;
 }
 .index-section-3-article-3{
     background: url(../img/ipadApple.jpg);
     background-position: center;
-    grid-area: article3;
 }
 .index-section-3-article-4{
     background: url(../img/airpodsPro.jpg);
     background-position: center;
-    grid-area: article4;
 }
 .index-section-3-h2-1{
     display: flex;
@@ -332,290 +323,53 @@
     text-decoration: underline;
 }
 
-
-.index-carrousel{
-    width: 1200px;
-    height: 630px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.index-conteCarrousel{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.index-itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.index-itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.151);
-    background-blend-mode: soft-light;
-}
-.index-itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 0 20px; 
-}
-.index-itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-#itemCarrousel-1{
-    background: url(../img/napoleonTv.jpg);
-    background-repeat: no-repeat;
-}
-.index-section-7-itemCarrousel-1{
-    padding: 530px 0 0 70px;
-    display: flex;
-}
-.index-section-7-itemCarrousel-1-buttom-1{
-    display: flex;
-    background-color: white; 
-    width: 150px;
-    height: 45px;
-    border-radius: 980px;
-    font-size: 15px;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    
-}
-.index-section-7-itemCarrousel-1-buttom-1 a{
-    color: rgb(27, 25, 25);
-}
-.index-section-7-itemCarrousel-1-buttom-1 img{
-    height: 14px;
-    padding: 0 0 0 10px;
-}
-.index-section-7-itemCarrousel-1-img-2-media-1,
-.index-section-7-itemCarrousel-1-img-2-media-2,
-.index-section-7-itemCarrousel-1-img-2-media-3, 
-.index-section-7-itemCarrousel-1-img-2-media-4,
-.index-section-7-itemCarrousel-1-img-2-media-5{
-    display: none;
-}
-.index-section-7-itemCarrousel-1-img-2-media-2{
-    display: none;
-}
-.index-section-7-itemCarrousel-1-p-1{
-    color: white;
-    font-size: 20px;
-    padding: 15px 0 0 45px;
-}
-.index-section-7-itemCarrousel-1-span-1{
-    font-weight: 600;
-}
-.index-section-7-itemCarrousel-1-span-2{
-    padding: 3px 0 0 4px;
-}
-.index-section-7-itemCarrousel-1-img-2{
-    padding: 0 0 0 230px;
-}
-#itemCarrousel-2{
-    background: url(../img/constelationTv.jpg);
-}
-.index-section-7-itemCarrousel-1-img-3{
-    padding: 0 10px 0 400px;
-}
-#itemCarrousel-3{
-    background: url(../img/messiTv.jpg);
-}
-.index-section-7-itemCarrousel-1-img-4{
-    padding: 0 10px 0 443px;
-}
-#itemCarrousel-4{
-    background: url(../img/killersTv.jpg); 
-}
-.index-section-7-itemCarrousel-1-img-5{
-    padding: 0 10px 0 208px;
-}
-.index-conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.index-conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-    padding: 0 20px 0 20px;
-}
-.index-itemCarrouselArrows > a > i{
-    color: white;
+.index-section-4{
+    width: 80%;
+    margin: 0 auto;
 }
 
 
-@media only screen and (min-width:320px) and (max-width:600px){
+@media only screen and (min-width:320px) and (max-width:990px){
     .nav {
         display: none;
     }
     .navbar{
         display: block;
     }
-    .index-section-1{
-        height: 400px;
-    }
+
     .index-section-1-img-1{
-        width: 320px;
-        height: 100px;
-        margin: 50px 0 0 0;
+        display: none;
     }
-    .index-section-1-h1{
-        font-size: 30px;
-    }
-    .index-section-1-p-1{
-        font-size: 15px;
-        padding-top: 10px;
-    }
-    .index-section-1-a-1 p{
-        font-size: 12px;
-    }
-
-    .index-section-2{
-        width: 100%;
-        height: 300px;
-    }
-    .index-section-2-div{
-        background: url(../img/appleVision1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .index-section-2-h2-1{
-        padding: 230px 0 0 0;
-    }
-    .index-section-2-h2-1 img{
-        height: 25px;
-        width: 25px;
-        padding: 1px 0 0 0;
-    }
-    .index-section-2-h2-1 h2{
-        font-size: 25px;
-    }
-    .indexsection-2-p-1{
-        font-size: 10px;
-    }
-    .index-section-2-a-1 p{
-        font-size: 13px;
-        margin: 0 6px;
-        padding: 9px 0 0 0;
-    }
-
-    .index-section-3{
-        grid-template-columns:  1fr;
-        grid-template-rows: repeat(4, 1fr);
-            grid-template-areas: 
-            "article1"
-            "article2"
-            "article4"        
-            "article3"; 
-    }
-    .index-section-3-article{
-        width: 320px;
-        height: 400px;
-    }
-    .index-section-3-article-1{
-        background: url(../img/appleWatch1.jpg);
-    }
-    .index-section-3-article-2{
-        background: url(../img/appleMac1.jpg);
-    }
-    .index-section-3-article-3{
-        background: url(../img/ipadApple1.jpg);
-    }
-    .index-section-3-article-4{
-        background: url(../img/airpodsPro1.jpg);
-    }
-    .index-section-3-h2-1,.index-section-3-h2-2 {
-        padding: 30px 0 0 0;
+    .index-section-1-img-1-mobile{
+        display: inline-block;
     }
 
     .index-carrousel{
         width: 320px;
         height: 600px;
     }
-    #itemCarrousel-1{
-        background: url(../img/napoleonTv1.jpg);
-    }
-    #itemCarrousel-2{
-        background: url(../img/constelationTv1.jpg);
-    }
-    #itemCarrousel-3{
-        background: url(../img/messiTv1.jpg);
-    }
-    #itemCarrousel-4{
-        background: url(../img/killresTv1.jpg); 
-    }
-    .index-section-7-itemCarrousel-1{
-        padding: 0 0 0 0;
-    }
-    .index-section-7-itemCarrousel-1-buttom-1{
-        margin: 500px 0 0 90px;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-1,
-    .index-section-7-itemCarrousel-1-img-2-media-2,
-    .index-section-7-itemCarrousel-1-img-2-media-3, 
-    .index-section-7-itemCarrousel-1-img-2-media-4,
-    .index-section-7-itemCarrousel-1-img-2-media-5{
-        display: inline;
-        position: absolute;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-1{
-        height: 40px;
-        left: 35%;
-        top: 2%;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-2{
-        height: 40px;
-        left: 14%;
-        top: 12%;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-3{
-        height: 45px;
-        left: 15%;
-        top: 12%;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-4{
-        height: 70px;
-        left: 16%;
-        top: 14%;
-    }
-    .index-section-7-itemCarrousel-1-img-2-media-5{
-        height: 85px;
-        left: 24%;
-        top: 12%;
-    }
-    .index-section-7-itemCarrousel-1-img-3,
-    .index-section-7-itemCarrousel-1-img-4,
-    .index-section-7-itemCarrousel-1-img-5,
-    .index-section-7-itemCarrousel-1-p-1,
-    .index-section-7-itemCarrousel-1-img-2{
-        display: none;
-    }
 
-    .footer-section-1{
-        padding: 0 0 0 0;
-    }
-    .footer-division-2{
-        width: 90%;
-    }
     .footer-section-2 i{
         letter-spacing: 60px;
         padding: 0 0 30px 20px;
     }
+    .index-section-4{
+        width: 100%;
+    }
 }
-
-
+@media only screen and (min-width:600px) and (max-width:990px){
+    .index-section-1-img-1-mobile{
+        height: 400px;
+    }
+    .index-section-4{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width:1300px){
+    .index-section-1-img-1{
+        height: 220px;
+    }
+}
 
 
 
