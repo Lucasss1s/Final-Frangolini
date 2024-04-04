@@ -72,6 +72,9 @@
     height: 20px;
     width: 20px;
 }
+.navbar i{
+    color: white;
+}
 
 .footer-division-1{
     background-color: white;
@@ -327,7 +330,19 @@
     width: 80%;
     margin: 0 auto;
 }
-
+.index-carousel-img-mobile{
+    display: none;
+}
+@media only screen and (min-width:320px) and (max-width:500px){
+    .index-carousel-img{
+        display: none;
+    }
+    .index-carousel-img-mobile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media only screen and (min-width:320px) and (max-width:990px){
     .nav {
@@ -335,6 +350,12 @@
     }
     .navbar{
         display: block;
+    }
+
+    .footer-section-2 i{
+        font-size: 20px;
+        letter-spacing: 30px;
+        padding: 0 0 30px 35px;
     }
 
     .index-section-1-img-1{
@@ -348,11 +369,7 @@
         width: 320px;
         height: 600px;
     }
-
-    .footer-section-2 i{
-        letter-spacing: 60px;
-        padding: 0 0 30px 20px;
-    }
+    
     .index-section-4{
         width: 100%;
     }
@@ -490,338 +507,112 @@
 .iPhone-section-3 h2{
     font-size: 48px;
     font-weight: 600;
-    text-align: center;
-    padding: 130px 0 0 0;
     color: rgba(0, 0, 0, 0.904);
+    text-align: center;
+    padding: 70px 0 0 0;
 }
 .iPhone-section-3-galery{
+    padding: 70px 0 0 0;
+    display: grid;
+    grid-template-areas: 
+    "article1 article2 article3 article4";    
+    grid-gap: 60px; 
+    justify-content: center;
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .iPhone-section-3-galery{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+    "article1 article2" 
+    "article3 article4"; 
+    }
+}
+@media only screen and (min-width:100px) and (max-width:499px){
+    .iPhone-section-3-galery{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+    "article1"
+    "article2" 
+    "article3"
+    "article4"; 
+    }
+}
+
+
+.iPhone-section-3-galery-article{
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
 }
 .iPhone-section-3-galery-article-1{
-    padding: 60px 0 0 450px;
+    grid-area: article1;
 }
-.iPhone-section-3-galery-article-1-img-1{
-    width: 194px;
-    height: 257px;
-}
-.iPhone-section-3-galery-article-1-img-2{
-    width: 68px;
-    height: 14px;
-    margin: 15px 0 0 60px;
-}
-.iPhone-section-3-galery-article-1-p-1{
-    font-size: 13px;
-    color: rgb(231, 156, 15);
-    text-align: center;
-    padding: 10px 0 0 0;
-}
-.iPhone-section-3-galery-article-1-h3-1{
-    font-size: 23px;
-    font-weight: 600;
-    padding: 10px 0 0 0;
-    text-align: center;
-}
-.iPhone-section-3-galery-article-1-p-2{
-    font-size: 17px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 0 0 0;
-}
-.iPhone-section-3-galery-article-1-p-3{
-    font-size: 15px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 40px 0 0 0;
-}
-.iPhone-section-3-galery-article-1-p-4{
-    color: white;
-    background: #0071e3;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 980px;
-    width: 47px;
-    height: 20px;
-    line-height: 20px;
-    margin: 20px 0 0 70px;
-}
-.iPhone-section-3-galery-article-1-p-4:hover{
-    background: #0281ff;
-}
-.iPhone-section-3-galery-article-1-p-5{
-    color: rgb(2, 118, 226);
-    font-size: 14px;
-    padding: 15px 0 0 55px;
-    font-weight: 500;
-}
-.iPhone-section-3-galery-article-1-p-5:hover{
-    text-decoration: underline;
-}
-.iPhone-section-3-galery-article-1-div-1{
-    background-color: rgba(128, 128, 128, 0.795);
-    width: 194px;
-    height: 1px;
-    margin: 40px 0 40px 5px;
-}
-.iPhone-section-3-galery-article-1-p-6{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(43, 43, 43);
-}
-.iPhone-section-3-galery-article-1-p-7{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-1-p-8{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-1-p-9{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-
 .iPhone-section-3-galery-article-2{
-    padding: 60px 0 0 50px;
+    grid-area: article2;
 }
-.iPhone-section-3-galery-article-2-img-1{
-    width: 194px;
-    height: 257px;
-}
-.iPhone-section-3-galery-article-2-img-2{
-    width: 86px;
-    height: 14px;
-    margin: 15px 0 0 50px;
-}
-.iPhone-section-3-galery-article-2-p-1{
-    font-size: 13px;
-    color: rgb(231, 156, 15);
-    text-align: center;
-    padding: 10px 0 0 0;
-}
-.iPhone-section-3-galery-article-2-h3-1{
-    font-size: 23px;
-    font-weight: 600;
-    padding: 10px 0 0 0;
-    text-align: center;
-}
-.iPhone-section-3-galery-article-2-p-2{
-    font-size: 17px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 8px 0 0 0;
-}
-.iPhone-section-3-galery-article-2-p-3{
-    font-size: 15px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 40px 0 0 0;
-}
-.iPhone-section-3-galery-article-2-p-4{
-    color: white;
-    background: #0071e3;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 980px;
-    width: 47px;
-    height: 20px;
-    line-height: 20px;
-    margin: 18px 0 0 70px;
-}
-.iPhone-section-3-galery-article-2-p-4:hover{
-    background: #0281ff;
-}
-.iPhone-section-3-galery-article-2-p-5{
-    color: rgb(2, 118, 226);
-    font-size: 14px;
-    padding: 15px 0 0 55px;
-    font-weight: 500;
-}
-.iPhone-section-3-galery-article-2-p-5:hover{
-    text-decoration: underline;
-}
-.iPhone-section-3-galery-article-2-div-1{
-    background-color: rgba(128, 128, 128, 0.795);
-    width: 194px;
-    height: 1px;
-    margin: 40px 0 40px 5px;
-}
-.iPhone-section-3-galery-article-2-p-6{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(43, 43, 43);
-}
-.iPhone-section-3-galery-article-2-p-7{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-2-p-8{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-2-p-9{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-
 .iPhone-section-3-galery-article-3{
-    padding: 60px 0 0 50px;
+    grid-area: article3;
 }
-.iPhone-section-3-galery-article-3-img-1{
-    width: 194px;
-    height: 257px;
-}
-.iPhone-section-3-galery-article-3-img-2{
-    width: 104px;
-    height: 14px;
-    margin: 15px 0 0 50px;
-}
-.iPhone-section-3-galery-article-3-p-1{
-    font-size: 13px;
-    color: rgb(231, 156, 15);
-    text-align: center;
-    padding: 10px 0 0 0;
-}
-.iPhone-section-3-galery-article-3-h3-1{
-    font-size: 23px;
-    font-weight: 600;
-    padding: 10px 0 0 0;
-    text-align: center;
-}
-.iPhone-section-3-galery-article-3-p-2{
-    font-size: 17px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 7px 0 0 0;
-}
-.iPhone-section-3-galery-article-3-p-3{
-    font-size: 15px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 40px 0 0 0;
-}
-.iPhone-section-3-galery-article-3-p-4{
-    color: white;
-    background: #0071e3;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 980px;
-    width: 47px;
-    height: 20px;
-    line-height: 20px;
-    margin: 17px 0 0 70px;
-}
-.iPhone-section-3-galery-article-3-p-4:hover{
-    background: #0281ff;
-}
-.iPhone-section-3-galery-article-3-p-5{
-    color: rgb(2, 118, 226);
-    font-size: 14px;
-    padding: 13px 0 0 55px;
-    font-weight: 500;
-}
-.iPhone-section-3-galery-article-3-p-5:hover{
-    text-decoration: underline;
-}
-.iPhone-section-3-galery-article-3-div-1{
-    background-color: rgba(128, 128, 128, 0.795);
-    width: 194px;
-    height: 1px;
-    margin: 40px 0 40px 5px;
-}
-.iPhone-section-3-galery-article-3-p-6{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(43, 43, 43);
-}
-.iPhone-section-3-galery-article-3-p-7{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-3-p-8{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
-.iPhone-section-3-galery-article-3-p-9{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
+.iPhone-section-3-galery-article-4{
+    grid-area: article4;
 }
 
-.iPhone-section-3-galery-article-4{
-    padding: 60px 0 0 50px;
+
+
+.iPhone-section-3-galery-article-img-1{
+    width: 194px;
+    height: 257px;
 }
 .iPhone-section-3-galery-article-4-img-1{
     width: 151px;
     height: 257px;
 }
+.iPhone-section-3-galery-article-1-img-2{
+    width: 68px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-img-2{
+    width: 86px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-img-2{
+    width: 104px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
 .iPhone-section-3-galery-article-4-img-2{
     width: 50px;
     height: 14px;
-    margin: 15px 0 0 50px;
+    margin: 15px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-1{
+.iPhone-section-3-galery-article-p-1{
     font-size: 13px;
     color: rgb(231, 156, 15);
-    text-align: center;
     padding: 10px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-h3-1{
+.iPhone-section-3-galery-article-h3-1{
     font-size: 23px;
     font-weight: 600;
     padding: 10px 0 0 0;
-    text-align: center;
 }
-.iPhone-section-3-galery-article-4-p-2{
+.iPhone-section-3-galery-article-p-2{
     font-size: 17px;
     color: rgb(75, 75, 75);
     font-weight: 500;
-    text-align: center;
-    padding: 7px 0 0 0;
+    padding: 10px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-3{
-    font-size: 17px;
-    color: rgb(75, 75, 75);
-    font-weight: 500;
-    text-align: center;
-    padding: 5px 0 0 0;
-}
-.iPhone-section-3-galery-article-4-p-4{
+.iPhone-section-3-galery-article-p-3{
     font-size: 15px;
     color: rgb(75, 75, 75);
     font-weight: 500;
-    text-align: center;
-    padding: 15px 0 0 0;
+    padding: 40px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-5{
+.iPhone-section-3-galery-article-p-4{
     color: white;
     background: #0071e3;
     text-align: center;
@@ -831,50 +622,49 @@
     width: 47px;
     height: 20px;
     line-height: 20px;
-    margin: 15px 0 0 50px;
+    margin: 20px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-5:hover{
+.iPhone-section-3-galery-article-p-4:hover{
     background: #0281ff;
 }
-.iPhone-section-3-galery-article-4-p-6{
+.iPhone-section-3-galery-article-p-5{
     color: rgb(2, 118, 226);
     font-size: 14px;
-    padding: 11px 0 0 35px;
     font-weight: 500;
+    padding: 15px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-6:hover{
+.iPhone-section-3-galery-article-p-5:hover{
     text-decoration: underline;
 }
-.iPhone-section-3-galery-article-4-div-1{
+.iPhone-section-3-galery-article-div-1{
     background-color: rgba(128, 128, 128, 0.795);
     width: 194px;
     height: 1px;
-    margin: 44px 0 38px 5px;
+    margin: 40px 0 40px 0;
 }
-.iPhone-section-3-galery-article-4-p-7{
+.iPhone-section-3-galery-article-p-6{
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
     color: rgb(43, 43, 43);
 }
-.iPhone-section-3-galery-article-4-p-8{
+.iPhone-section-3-galery-article-p-7{
     font-size: 15px;
     color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-9{
+
+.iPhone-section-3-galery-article-4-p-3{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-4-p-4{
     font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    padding: 15px 0 0 0;
 }
-.iPhone-section-3-galery-article-4-p-10{
-    font-size: 15px;
-    color: rgb(95, 95, 95);
-    text-align: center;
-    padding: 2px 0 0 0;
-}
+
+
 
 
 
@@ -906,6 +696,11 @@
     height: 820px;
     transition: 1s;
 }
+.Mac-section-2-h2-1 h2{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
 
 @media only screen and (min-width:1150px) and (max-width:1650px){
     .Mac-section-1 video{
@@ -934,14 +729,15 @@
     .Mac-section-1 video{
         height: 160px;
     }
+    .Mac-section-2-h2-1 h2{
+        font-size: 40px;
+    }
+    .Mac-section-2-h2-1 h2{
+        font-size: 35px;
+    }
 }
 
 
-.Mac-section-2-h2-1 h2{
-    font-size: 45px;
-    font-weight: 600;
-    text-align: center;
-}
 .Mac-section-2-h2-1 p{
     font-size: 17px;
     font-weight: 500;
