@@ -408,13 +408,11 @@
 }
 .iPhone-section-1-p-1{
     color: #f56300;
-    text-align: center;
     font-size: 12px;
     font-weight: 400;
-    padding: 0 0 10px 0 ;
+    padding: 0 0 10px 0;
 }
 .iPhone-section-1 h1{
-    text-align: center;
     color: antiquewhite;
     font-size: 25px;
     font-weight: 500;
@@ -427,13 +425,11 @@
     color: white;
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
     padding: 15px 0 0 0;
 }
 .iPhone-section-1-p-3{
     color: white;
     background: #0071e3;
-    text-align: center;
     font-size: 17px;
     font-weight: 400;
     border-radius: 980px;
@@ -458,7 +454,39 @@
     height: 280px;
     padding: 20px 0 0 0 ;
 }
-
+@media only screen and (min-width: 750px) and (max-width:1109px){
+    .iPhone-section-1-img-2{
+        height: 200px;
+    }
+    .iPhone-section-1{
+        height: 660px;
+    }
+}
+@media only screen and (min-width: 545px) and (max-width:749px){
+    .iPhone-section-1-img-2{
+        height: 150px;
+    }
+    .iPhone-section-1{
+        height: 570px;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width:544px){
+    .iPhone-section-1-img-2{
+        height: 125px;
+    }
+    .iPhone-section-1{
+        height: 530px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:429px){
+    .iPhone-section-1-img-2{
+        width: 320px;
+        height: 100px;
+    }
+    .iPhone-section-1{
+        height: 530px;
+    }
+}
 .iPhone-section-2{
     display: grid;
     justify-content: center;
@@ -468,25 +496,28 @@
     height: 800px;
     width: 1412px;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 30px;
+}
+.iphone-section-2-text{
+    padding: 300px 0 0 200px;
 }
 .iPhone-section-2-p-1{
     color: white;
     font-size: 24px;
     font-weight: 600;
-    padding: 300px 0 0 200px;
 }
 .iPhone-section-2-p-2{
     color: white;
     font-size: 48px;
     font-weight: 600;
-    padding: 10px 0 0 200px;
+    padding: 10px 0 0 0;
 }
 .iPhone-section-2-p-3{
     color: white;
     font-size: 48px;
     font-weight: 600;
-    padding: 0 0 0 200px;
+    padding: 0 0 0 0;
 }
 .iPhone-section-2-p-4{
     color: rgb(0, 0, 0);
@@ -498,11 +529,77 @@
     line-height: 35px;
     border-radius: 980px;
     background-color: white;
-    margin: 10px 0 0 200px;
+    margin: 10px 0 0 0;
 }
 .iPhone-section-2-p-4:hover{
     background-color: rgb(211, 211, 211);
 }
+
+@media only screen and (min-width:1110px) and (max-width:1500px){
+    .iPhone-section-2-img-1{
+        height: 700px;
+        width: 1100px;
+    }
+    .iphone-section-2-text{
+        padding: 250px 0 0 150px;
+    }
+}
+@media only screen and (min-width: 910px) and (max-width:1109px){
+    .iPhone-section-2-img-1{
+        height: 600px;
+        width: 900px;
+    }
+    .iphone-section-2-text{
+        padding: 200px 0 0 100px;
+    }
+}
+@media only screen and (min-width: 620px) and (max-width:909px){
+    .iPhone-section-2-img-1{
+        background: url(../img/modeloIphoneMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+        width: 600px; 
+        height: 582px;
+    }
+    .iphone-section-2-text{
+        padding: 15px 0 0 150px;
+    }
+    .iPhone-section-2-p-1{
+        margin: 0 0 0 55px;
+    }
+    .iPhone-section-2-p-4{
+        margin: 10px 0 0 80px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:619px){
+    .iPhone-section-2-img-1{
+        background: url(../img/modeloIphoneMobile2.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+        width: 320px; 
+        height: 480px;
+    }
+    .iphone-section-2-text{
+        padding: 15px 0 0 50px;
+    }
+    .iPhone-section-2-p-1{
+        font-size: 18px;
+        margin: 0 0 0 40px;
+    }
+    .iPhone-section-2-p-2{
+        font-size: 35px;
+    }
+    .iPhone-section-2-p-3{
+        font-size: 35px;
+    }
+    .iPhone-section-2-p-4{
+        margin: 10px 0 0 45px;
+    }
+}
+
+
 
 .iPhone-section-3 h2{
     font-size: 48px;
@@ -528,6 +625,9 @@
     }
 }
 @media only screen and (min-width:100px) and (max-width:499px){
+    .iPhone-section-3 h2{
+        font-size: 35px;
+    }
     .iPhone-section-3-galery{
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
@@ -537,7 +637,6 @@
     "article4"; 
     }
 }
-
 
 .iPhone-section-3-galery-article{
     height: 100%;
@@ -559,8 +658,6 @@
 .iPhone-section-3-galery-article-4{
     grid-area: article4;
 }
-
-
 
 .iPhone-section-3-galery-article-img-1{
     width: 194px;
@@ -927,38 +1024,52 @@
 .AirPods-main{
     background-color: rgb(248, 248, 248);
 }
-.AirPods-section-1 video{
+.AirPods-section-1-videoMobile{
+    display: none;
+    height: 700px;
+    width: auto;
+    margin: 50px auto 0;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
-    margin: 10vh 0 0 9vw;
+}
+.AirPods-section-1-video {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 100px auto 0;
     border-radius: 20px;
     transition: 1s;
-    height: 78vh;
+    height: 710px;
+    width: auto;
+    max-width: 100%;
 }
-.AirPods-section-1 video:hover{
-    height: 80vh;
-    margin: 9vh 0 0 8vw;
+.AirPods-section-1-video:hover{
+    height: 728px;
     transition: 1s;
 }
 .AirPods-section-1 h1{
     position: absolute;
     top: 35%;
-    left: 33%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
-    font-size: 12vh;
+    font-size: 110px;
     font-weight: 600;
 }
 .Airpods-section-1-p-1{
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
-    font-size: 2.5vh;
+    font-size: 23px;
     text-align: center;
     font-weight: 600;
 }
 .Airpods-section-1-a{
     display: flex;
+    font-size: 18px;
 }
 .Airpods-section-1-a-1{
     position: absolute;
@@ -967,7 +1078,6 @@
     color: rgb(0, 0, 0);
     background: #ffffff;
     text-align: center;
-    font-size: 2vh;
     font-weight: 400;
     border-radius: 980px;
     width: 62px;
@@ -982,184 +1092,329 @@
     top: 80%;
     left: 49%;
     color: white;
-    font-size: 2vh;
-    text-align: center;
 }
 .Airpods-section-1-a-2 i{
-    font-size: 1.5vh;
+    font-size: 13px;
 }
 .Airpods-section-1-a-2:hover{
     text-decoration: underline;
 }
-
+.AirPods-section-product{
+    height: 700px;
+    width: 1500px;
+    margin: 45px auto 0;
+    border-radius: 18px;
+    text-align: center; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .AirPods-section-2{
     background: url(../img/Airpods3generacion.jpg);
-    height: 77vh;
-    width: 80vw;
-    margin: 5vh 0 0 10vw;
-    border-radius: 18px;
 }
-.AirPods-section-2 h2{
-    font-size: 14vh;
-    font-weight: 600;
-    text-align: center;
-    padding: 29vh 0 0 0;
-}
-.Airpods-section-2-p-1{
-    font-size: 2.5vh;
-    text-align: center;
-    font-weight: 600;
-}
-.Airpods-section-2-p-2{
-    font-size: 2.2vh;
-    text-align: center;
-    font-weight: 500;
-    margin: .5vh 0 0 0;
-}
-.Airpods-section-2-a{
-    display: flex;
-}
-.Airpods-section-2-a-1{
-    color: rgb(255, 255, 255);
-    background: #0071e3;
-    text-align: center;
-    font-size: 1.8vh;
-    font-weight: 400;
-    border-radius: 980px;
-    width: 62px;
-    height: 36px;
-    line-height: 36px;
-    margin: 20vh 0 0 34vw;
-}
-.Airpods-section-2-a-1:hover{
-    background: #0281ff;
-}
-.Airpods-section-2-a-2{
-    color: #0071e3;
-    font-size: 2vh;
-    text-align: center;
-    margin: 20.7vh 0 0 2vw;
-}
-.Airpods-section-2-a-2 i{
-    font-size: 1.5vh;
-}
-.Airpods-section-2-a-2:hover{
-    text-decoration: underline;
-}
-
 .AirPods-section-3{
     background: url(../img/Airpods2generacion.jpg);
-    height: 77vh;
-    width: 80vw;
-    margin: 5vh 0 0 10vw;
-    border-radius: 18px;
 }
-.AirPods-section-3 h2{
-    font-size: 14vh;
+.AirPods-section-product h2{
+    font-size: 127px;
     font-weight: 600;
-    text-align: center;
-    padding: 29vh 0 0 0;
+    padding: 263px 0 0 0;
 }
-.Airpods-section-3-p-1{
-    font-size: 2.5vh;
-    text-align: center;
+.Airpods-section-product-p-1{
+    font-size: 22px;
     font-weight: 600;
 }
-.Airpods-section-3-p-2{
-    font-size: 2.2vh;
-    text-align: center;
+.Airpods-section-product-p-2{
+    font-size: 20px;
     font-weight: 500;
-    margin: .5vh 0 0 0;
+    margin: 5px 0 0 0;
 }
-.Airpods-section-3-a{
-    display: flex;
+.Airpods-section-product-a{
+    display: flex; 
+    justify-content: center;
+    margin: 182px 0 0 0;
 }
-.Airpods-section-3-a-1{
+.Airpods-section-product-a-1{
     color: rgb(255, 255, 255);
     background: #0071e3;
-    text-align: center;
-    font-size: 1.8vh;
+    font-size: 16px;
     font-weight: 400;
     border-radius: 980px;
     width: 62px;
     height: 36px;
     line-height: 36px;
-    margin: 20vh 0 0 34vw;
 }
-.Airpods-section-3-a-1:hover{
+.Airpods-section-product-a-1:hover{
     background: #0281ff;
 }
-.Airpods-section-3-a-2{
+.Airpods-section-product-a-2{
     color: #0071e3;
-    font-size: 2vh;
-    text-align: center;
-    margin: 20.7vh 0 0 2vw;
+    font-size: 18px;
+    margin: 7px 0 0 40px;
 }
-.Airpods-section-3-a-2 i{
-    font-size: 1.5vh;
+.Airpods-section-product-a-2 i{
+    font-size: 13px;
 }
-.Airpods-section-3-a-2:hover{
+.Airpods-section-product-a-2:hover{
     text-decoration: underline;
 }
 
 .AirPods-section-4{
     position: relative;
     background: white;
-    height: 77vh;
-    width: 80vw;
-    margin: 5vh 0 0 10vw;
-    border-radius: 18px;
 }
 .Airpods-section-4-img-1{
     position: absolute;
-    top: 7%;
-    left: 32.5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .AirPods-section-4 h2{
-    font-size: 20vh;
+    font-size: 182px;
     font-weight: 600;
-    text-align: center;
-    padding: 29vh 0 0 0;
-}
-.Airpods-section-4-p-1{
-    font-size: 2.2vh;
-    font-weight: 500;
-    text-align: center;
-    margin: .5vh 0 0 0;
-}
-.Airpods-section-4-a{
-    display: flex;
-}
-.Airpods-section-4-a-1{
-    color: rgb(255, 255, 255);
-    background: #0071e3;
-    text-align: center;
-    font-size: 1.8vh;
-    font-weight: 400;
-    border-radius: 980px;
-    width: 62px;
-    height: 36px;
-    line-height: 36px;
-    margin: 20vh 0 0 35vw;
-}
-.Airpods-section-4-a-1:hover{
-    background: #0281ff;
-}
-.Airpods-section-4-a-2{
-    color: #0071e3;
-    font-size: 2vh;
-    text-align: center;
-    margin: 20.7vh 0 0 2vw;
-}
-.Airpods-section-4-a-2 i{
-    font-size: 1.5vh;
+    padding: 264px 0 0 0;
 }
 .Airpods-section-4-a-2:hover{
     text-decoration: underline;
 }
 
-
-
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .AirPods-section-1-video {
+        height: 550px;
+    }
+    .AirPods-section-1-video:hover{
+        height: 578px;
+    }
+    .AirPods-section-1 h1{
+        font-size: 90px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 69%;
+    }
+    .Airpods-section-1-a-2{
+        top: 70%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        width: 1150px;
+        background-position: center;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1300px){
+    .Airpods-section-1-a-2{
+        left: 51%;
+    }
+}
+@media only screen and (min-width:824px) and (max-width:1199px){
+    .AirPods-section-1-video {
+        height: 380px;
+    }
+    .AirPods-section-1-video:hover{
+        height: 408px;
+    }
+    .AirPods-section-1 h1{
+        top: 26%;
+        font-size: 70px;
+    }
+    .Airpods-section-1-p-1{
+        top: 38%;
+        font-size: 18px;
+    }
+    .Airpods-section-1-a{
+        font-size: 14px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 53%;
+        left: 44%;
+        height: 30px;
+        line-height: 30px;
+    }
+    .Airpods-section-1-a-2{
+        top: 54%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        height: 500px;
+        width: 810px;
+        background-position: center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 100px;
+        padding: 163px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 82px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 350px;
+        top: 40%;
+    }
+}
+@media only screen and (min-width:824px) and (max-width:1065px){
+    .Airpods-section-1-a-1{   
+        left: 42%;    
+    }
+}
+@media only screen and (min-width:824px) and (max-width:991px){
+    .AirPods-section-1 h1{
+        top: 33%;
+    }
+    .Airpods-section-1-p-1{
+        top: 45%;
+    }
+    .Airpods-section-1-a-1{   
+        top: 60%;
+    }
+    .Airpods-section-1-a-2{
+        top: 61%;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:823px){
+    .AirPods-section-1-video {
+        display: none;
+    }
+    .AirPods-section-1-videoMobile{
+        display: block;
+    }
+    .AirPods-section-1 h1{
+        top: 67%;
+        font-size: 60px;
+    }
+    .Airpods-section-1-p-1{
+        top: 78%;
+        font-size: 24px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 92%;
+        left: 39%;
+    }
+    .Airpods-section-1-a-2{
+        top: 93%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        height: 700px;
+        width:  500px;
+        background-position: center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 70px;
+        padding: 455px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 30px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 350px;
+        top: 30%;
+    }
+    .AirPods-section-2{
+        background: url(../img/Airpods3generacionMobile.jpg);
+    }
+    .AirPods-section-3{
+        background: url(../img/Airpods2generacionMobile.jpg);
+    }
+}
+@media only screen and (min-width:500px) and (max-width:695px){
+    .AirPods-section-1 h1{
+        font-size: 55px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:637px){
+    .AirPods-section-1 h1{
+        font-size: 50px;
+        top: 69%;
+    }
+    .Airpods-section-1-p-1{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:580px){
+    .AirPods-section-1 h1{
+        font-size: 43px;
+        top: 69%;
+    }
+    .Airpods-section-1-p-1{
+        font-size: 18px;
+    }
+    .Airpods-section-1-a-1{   
+        left: 35%;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:499px){
+    .AirPods-section-1-video {
+        display: none;
+    }
+    .AirPods-section-1-videoMobile{
+        display: block;
+        width: 320px;
+        height: auto;
+    }
+    .AirPods-section-1 h1{
+        font-size: 35px;
+        top: 45%;
+        left: 45%;
+        transform: translateX(-40%);
+    }
+    .Airpods-section-1-p-1{
+        top: 52%;
+        font-size: 16px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 65%;
+        left: 32%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .Airpods-section-1-a-2{
+        top: 65.8%;
+        left: 48%;
+        font-size: 16px;
+    }
+    .AirPods-section-product{
+        height: 451px;
+        width:  320px;
+        background-position: center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 45px;
+        padding: 275px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 10px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 250px;
+        top: 30%;
+    }
+    .AirPods-section-2{
+        background: url(../img/Airpods3generacionMobile2.jpg);
+    }
+    .AirPods-section-3{
+        background: url(../img/Airpods2generacionMobile2.jpg);
+    }
+}
+@media only screen and (min-width:320px) and (max-width:370px){
+    .AirPods-section-1 h1{
+        font-size: 35px;
+        top: 45%;
+        left: 36.8%;
+        transform: translateX(-30%);
+    }
+    .Airpods-section-1-a-1{   
+        top: 65%;
+        left: 26%;
+    }
+    .Airpods-section-1-a-2{
+        top: 65.8%;
+        left: 48%;
+        font-size: 16px;
+    }
+}
+.footer-division-1-air{
+    background-color: rgb(248, 248, 248);
+    height: 50px;
+}
 
 
 
@@ -1169,61 +1424,49 @@
 
 /* Airpods  */
 .AppleID-section-1{
-    padding: 8vh 0 0 37.5vw;
+    padding: 50px 0 0 0 ;
 }
 .AppleID-section-1-div{
-    width: 25vw;
     text-align: center;
 }
 .AppleID-section-1 img{
-    margin: 8vh 0 8vh 0;
+    margin: 80px 0 80px 0;
 }
 .AppleID-section-1 h1{
-    font-size: 3.5vh;
+    font-size: 32px;
     text-align: center;
     color: rgba(0, 0, 0, 0.788);
 }
 .AppleID-section-1 h2{
-    font-size: 2vh;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
-    padding: 2vh 0 0 0;
+    padding: 18px 0 0 0;
     color: rgba(0, 0, 0, 0.788);
-}
-.AppleID-section-1-div-1{
-    text-align: center;
 }
 .AppleID-section-1-input-1{
     border: .1px solid black;
-    margin: 2.8vh 0 0 0;
-    padding: 1.5vh 1.5vw;
-    font-size: 1.3vh;
+    margin: 28px 0 0 0;
+    padding: 14.5px 30px;
+    font-size: 12.3px;
     border-radius: 8px;
-    width: 25vw;
-}
-.AppleID-section-1-input-2{
-    border: .1px solid black;
-    margin: 1.8vh 0;
-    padding: 1.5vh 1.5vw;
-    font-size: 1.3vh;
-    border-radius: 8px;
-    width: 25vw;
+    width: 470px;
 }
 .AppleID-section-1-input-3{
-    margin: 8vh 0 1vh 0;
+    margin: 80px 0 0 0;
     color: rgba(0, 0, 0, 0.678);
 }
 .AppleID-section-1-p-1{
     text-align: center;
     color: rgb(28, 153, 255);
-    margin: 3vh 0 0 0;
+    margin: 30px 0 0 0;
 }
 .AppleID-section-1-p-1:hover{
     text-decoration: underline;
 }
 .AppleID-section-1-a-1{
     display: flex;
-    margin: 1.2vh 0 0 0;
+    margin: 12px 0 0 0;
     justify-content: center;
 }
 .AppleID-section-1-p-2{
@@ -1231,7 +1474,7 @@
 }
 .AppleID-section-1-p-3{
     color: rgb(28, 153, 255);
-    margin: 0 0 0 .3vw;
+    margin: 0 0 0 6px;
 }
 .AppleID-section-1-p-3:hover{
     text-decoration: underline;
@@ -1239,14 +1482,19 @@
 .AppleID-section-1-button-1{
     background-color: #5b32b9;
     color: #fff;
-    font-size: 1.2vh;
-    padding: 1vh 2vw;
+    font-size: 11px;
+    padding: 10px 38px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    margin: 2vh 0 0 0;
+    margin: 20px 0 0 0;
 }
 .AppleID-section-1-button-1:hover{
     background-color: #6635d8;
+}
+@media only screen and (min-width:320px) and (max-width:490px){
+    .AppleID-section-1-input-1{
+        width: 320px;
+    }
 }
