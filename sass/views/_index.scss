@@ -1,0 +1,268 @@
+@import '../utilities/variables';
+
+.index-section-1{
+    background-color: $color-black;
+    height: 670px;
+    text-align: $center;
+}
+.index-section-1-h1{
+    color: $color-white;
+    font-size: 60px;
+    padding-top: 60px;
+}
+.index-section-1-p-1{
+    color: $color-white;
+    font-size: 30px;
+}
+.index-section-1-a-1{
+    display: flex;
+    justify-content: $center;
+
+        p{
+            color: rgb(41, 152, 255);
+            font-size: 18px;
+            padding-top: 30px;
+            margin: 0 18px;
+            font-weight: 600;
+
+                &:hover{
+                    text-decoration: $underline;
+                }
+        }
+}
+.index-section-1-img-1{
+    height: 300px;
+    margin: 80px 0 0 0;
+}
+.index-section-1-img-1-mobile{
+    display: $none;
+    height: 300px;
+}
+
+.index-division{
+    height: 15px;
+    background-color: $color-white;
+}
+
+.index-section-2{
+    background-color: rgb(243, 243, 243);
+    height: 700px;
+    text-align: $center;
+}
+.index-section-2-div{
+    background: url(../img/appleVision.JPG);
+    background-position: $center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.index-section-2-h2-1{
+    position: relative;
+    display: flex;
+    justify-content: $center;    
+    padding: 530px 0 0 0;
+
+        img{
+            height: 55px;
+            width: 55px;
+            padding: 6px 0 0 0;
+        }
+
+        h2{
+            color: $color-black;
+            font-size: 50px;
+            padding: 0 0 0 10px;
+        }
+}
+.indexsection-2-p-1{
+    color: $color-black;
+    font-size: 25px;
+}
+.index-section-2-a-1{
+    display: flex;
+    justify-content: $center;
+
+        p{
+            color: rgb(41, 152, 255);
+            font-size: 20px;
+            padding: 15px 0 0 0;
+            margin: 0 18px;
+            font-weight: 600;
+
+            &:hover{
+                text-decoration: $underline;
+            }
+        }
+}
+
+.index-section-3-article{
+    height: 550px;
+    width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all .9s;
+    text-align: $center;
+    margin: 0 0 20px 0;
+
+        &:hover{
+            transform: scale(1.02);
+        }
+}
+
+$images1: (
+    appleWatch: "../img/appleWatch.jpg",
+    appleMac: "../img/appleMac.jpg",
+    ipadApple: "../img/ipadApple.jpg",
+    airpodsPro: "../img/airpodsPro.jpg"
+);
+@for $i from 1 through length($images1) {
+    $key: nth(map-keys($images1), $i);
+    $image: map-get($images1, $key);
+
+    .index-section-3-article-#{$i} {
+        background: url(#{$image});
+        background-position: center;
+    }
+}
+
+.index-section-3-h2-1{
+    display: flex;
+    justify-content: $center;
+    padding: 60px 0 0 0;
+
+        img{
+            height: 33px;
+            width: 40px;
+        }
+
+        h2{
+            font-size: 30px;
+            padding: 2px 0 0 4px;
+        }
+}
+.index-section-3-article-1-h2-2{
+    color: $color-white;
+}
+.index-section-3-article-3-h2-1{
+    color: $color-black;
+}
+.index-section-3-h2-2{
+    font-size: 30px;
+    padding: 60px 0 0 0;
+}
+.index-section-3-article-2-h2-2{
+    color: rgb(0, 0, 0);
+}
+.index-section-3-article-4-h2-2{
+    color: $color-white;
+}
+.index-section-3-p-1{
+    font-size: 12px;
+    text-align: $center;
+    padding: 3px 0 0 0;
+}
+.index-section-3-article-1-p-1{
+    color: red;
+}
+.index-section-3-article-2-p-1{
+    color: rgb(0, 255, 255);
+}
+
+$colors1: (
+    1: rgb(61, 109, 163),
+    2: rgb(190, 59, 59),
+    3: rgb(212, 214, 65),
+    4: rgb(177, 177, 177)
+);
+@for $i from 1 through length($colors1) {
+    .index-section-3-article-3-span-#{$i}{
+        color: map-get($colors1, $i);
+    }
+}
+
+.index-section-3-article-4-p-1{
+    color: $color-white;
+}
+.index-section-3-article-4-span-1{
+    background: linear-gradient(to right, red, rgb(255, 176, 28), yellow, rgb(51, 255, 0), rgb(0, 119, 255), rgb(165, 38, 255), violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.index-section-3-p-2{
+    font-size: 22px;
+    text-align: $center;
+    padding: 15px 0 0 0;
+}
+.index-section-3-article-1and4-p-2{
+    color: $color-white;
+}
+.index-section-3-article-2and3-p-2{
+    color: $color-black;
+}
+
+.index-section-3-a-1{
+    display: flex;
+    justify-content: $center;
+    position: relative;
+
+        p{
+            color: rgb(41, 152, 255);
+            font-size: 1.8vh;
+            padding: 13px 20px 0 0;
+            font-weight: 600;
+
+                &:hover{
+                    text-decoration: $underline;
+                }
+        }
+}
+
+.index-section-4{
+    width: 80%;
+    margin: 0 $auto;
+}
+.index-carousel-img-mobile{
+    display: $none;
+}
+@media only screen and (min-width:320px) and (max-width:500px){
+    .index-carousel-img{
+        display: $none;
+    }
+    .index-carousel-img-mobile{
+        display: block;
+        margin-left: $auto;
+        margin-right: $auto;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:990px){
+    .index-section-1-img-1{
+        display: $none;
+    }
+    .index-section-1-img-1-mobile{
+        display: inline-block;
+    }
+
+    .index-carrousel{
+        width: 320px;
+        height: 600px;
+    }
+    
+    .index-section-4{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:990px){
+    .index-section-1-img-1-mobile{
+        height: 400px;
+    }
+    .index-section-4{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width:1300px){
+    .index-section-1-img-1{
+        height: 220px;
+    }
+}

@@ -1,0 +1,414 @@
+@import '../utilities/variables';
+
+.AirPods-main{
+    background-color: rgb(248, 248, 248);
+}
+.AirPods-section-1{
+
+    h1{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-white;
+        font-size: 110px;
+        font-weight: 600;
+    }
+}
+.AirPods-section-1-videoMobile{
+    display: $none;
+    height: 700px;
+    width: $auto;
+    margin: 50px $auto 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.AirPods-section-1-video {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 100px $auto 0;
+    border-radius: 20px;
+    transition: 1s;
+    height: 710px;
+    width: $auto;
+    max-width: 100%;
+
+        &:hover{
+            height: 728px;
+            transition: 1s;
+        }
+}
+.Airpods-section-1-p-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-white;
+    font-size: 23px;
+    text-align: $center;
+    font-weight: 600;
+}
+.Airpods-section-1-a{
+    display: flex;
+    font-size: 18px;
+}
+.Airpods-section-1-a-1{
+    position: absolute;
+    top: 79%;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    text-align: $center;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+
+        &:hover{
+            background-color: rgb(211, 211, 211);
+        }
+}
+.Airpods-section-1-a-2{
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    color: $color-white;
+
+        &:hover{
+            text-decoration: $underline;
+        }
+        i{
+            font-size: 13px;
+        }
+}
+
+.AirPods-section-product{
+    height: 700px;
+    width: 1500px;
+    margin: 45px $auto 0;
+    border-radius: 18px;
+    text-align: $center; 
+    background-repeat: no-repeat;
+    background-position: $center;
+
+        h2{
+            font-size: 127px;
+            font-weight: 600;
+            padding: 263px 0 0 0;
+        }
+}
+
+$images2: (
+    1: "../img/Airpods3generacion.jpg",
+    2: "../img/Airpods2generacion.jpg",
+);
+@for $i from 1 through length($images2) {
+    $key: nth(map-keys($images2), $i);
+    $image: map-get($images2, $key);
+    
+    .AirPods-section-#{$key + 1} {
+        background: url(#{$image});
+    }
+}
+
+.Airpods-section-product-p-1{
+    font-size: 22px;
+    font-weight: 600;
+}
+.Airpods-section-product-p-2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+.Airpods-section-product-a{
+    display: flex; 
+    justify-content: $center;
+    margin: 182px 0 0 0;
+}
+.Airpods-section-product-a-1{
+    color: rgb(255, 255, 255);
+    background: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+
+    &:hover{
+        background: #0281ff;
+    }
+}
+.Airpods-section-product-a-2{
+    color: #0071e3;
+    font-size: 18px;
+    margin: 7px 0 0 40px;
+
+        &:hover{
+            text-decoration: $underline;
+        }
+        i{
+            font-size: 13px;
+        }
+}
+
+.AirPods-section-4{
+    position: relative;
+    background: $color-white;
+
+        h2{
+            font-size: 182px;
+            font-weight: 600;
+            padding: 224px 0 0 0;
+        }
+}
+.Airpods-section-4-img-1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .AirPods-section-1-video {
+        height: 550px;
+
+            &:hover{
+                height: 578px;
+            }
+    }
+
+    .AirPods-section-1 h1{
+        font-size: 90px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 69%;
+    }
+    .Airpods-section-1-a-2{
+        top: 70%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        width: 1150px;
+        background-position: $center;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1300px){
+    .Airpods-section-1-a-2{
+        left: 51%;
+    }
+}
+@media only screen and (min-width:824px) and (max-width:1199px){
+    .AirPods-section-1-video {
+        height: 380px;
+    }
+    .AirPods-section-1-video:hover{
+        height: 408px;
+    }
+    .AirPods-section-1 h1{
+        top: 26%;
+        font-size: 70px;
+    }
+    .Airpods-section-1-p-1{
+        top: 38%;
+        font-size: 18px;
+    }
+    .Airpods-section-1-a{
+        font-size: 14px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 53%;
+        left: 44%;
+        height: 30px;
+        line-height: 30px;
+    }
+    .Airpods-section-1-a-2{
+        top: 54%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        height: 500px;
+        width: 810px;
+        background-position: $center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 100px;
+        padding: 163px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 82px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 350px;
+        top: 40%;
+    }
+}
+@media only screen and (min-width:824px) and (max-width:1065px){
+    .Airpods-section-1-a-1{   
+        left: 42%;    
+    }
+}
+@media only screen and (min-width:824px) and (max-width:991px){
+    .AirPods-section-1 h1{
+        top: 33%;
+    }
+    .Airpods-section-1-p-1{
+        top: 45%;
+    }
+    .Airpods-section-1-a-1{   
+        top: 60%;
+    }
+    .Airpods-section-1-a-2{
+        top: 61%;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:823px){
+    .AirPods-section-1-video {
+        display: $none;
+    }
+    .AirPods-section-1-videoMobile{
+        display: block;
+    }
+    .AirPods-section-1 h1{
+        top: 67%;
+        font-size: 60px;
+    }
+    .Airpods-section-1-p-1{
+        top: 78%;
+        font-size: 24px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 92%;
+        left: 39%;
+    }
+    .Airpods-section-1-a-2{
+        top: 93%;
+        left: 50%;
+    }
+    .AirPods-section-product{
+        height: 700px;
+        width:  500px;
+        background-position: $center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 70px;
+        padding: 455px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 30px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 350px;
+        top: 30%;
+    }
+    .AirPods-section-2{
+        background: url(../img/Airpods3generacionMobile.jpg);
+    }
+    .AirPods-section-3{
+        background: url(../img/Airpods2generacionMobile.jpg);
+    }
+}
+@media only screen and (min-width:500px) and (max-width:695px){
+    .AirPods-section-1 h1{
+        font-size: 55px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:637px){
+    .AirPods-section-1 h1{
+        font-size: 50px;
+        top: 69%;
+    }
+    .Airpods-section-1-p-1{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:580px){
+    .AirPods-section-1 h1{
+        font-size: 43px;
+        top: 69%;
+    }
+    .Airpods-section-1-p-1{
+        font-size: 18px;
+    }
+    .Airpods-section-1-a-1{   
+        left: 35%;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:499px){
+    .AirPods-section-1-video {
+        display: $none;
+    }
+    .AirPods-section-1-videoMobile{
+        display: block;
+        width: 320px;
+        height: $auto;
+    }
+    .AirPods-section-1 h1{
+        font-size: 35px;
+        top: 45%;
+        left: 45%;
+        transform: translateX(-40%);
+    }
+    .Airpods-section-1-p-1{
+        top: 52%;
+        font-size: 16px;
+    }
+    .Airpods-section-1-a-1{   
+        top: 65%;
+        left: 32%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .Airpods-section-1-a-2{
+        top: 65.8%;
+        left: 48%;
+        font-size: 16px;
+    }
+    .AirPods-section-product{
+        height: 451px;
+        width:  320px;
+        background-position: $center;
+    } 
+    .AirPods-section-product h2{
+        font-size: 45px;
+        padding: 275px 0 0 0;
+    }
+    .Airpods-section-product-a{
+        margin: 10px 0 0 0;
+    }
+    .Airpods-section-4-img-1{
+        height: 250px;
+        top: 30%;
+    }
+    .AirPods-section-2{
+        background: url(../img/Airpods3generacionMobile2.jpg);
+    }
+    .AirPods-section-3{
+        background: url(../img/Airpods2generacionMobile2.jpg);
+    }
+}
+@media only screen and (min-width:320px) and (max-width:370px){
+    .AirPods-section-1 h1{
+        font-size: 35px;
+        top: 45%;
+        left: 36.8%;
+        transform: translateX(-30%);
+    }
+    .Airpods-section-1-a-1{   
+        top: 65%;
+        left: 26%;
+    }
+    .Airpods-section-1-a-2{
+        top: 65.8%;
+        left: 48%;
+        font-size: 16px;
+    }
+}
+.footer-division-1-air{
+    background-color: rgb(248, 248, 248);
+    height: 50px;
+}

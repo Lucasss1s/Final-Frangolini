@@ -1,0 +1,267 @@
+@import '../utilities/variables';
+
+.Mac-section-1{
+
+    video{
+        overflow: hidden;
+        height: 760px;
+        border-radius: 20px;
+        transition: 1s;
+
+        &:hover{
+            height: 820px;
+            transition: 1s;
+        }
+    }
+}
+.Mac-section-1-h1 {
+padding-top: 40px;
+
+h1{
+    font-size: 80px;
+    font-weight: 600;
+    text-align: $center;
+}
+p{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: $center;
+}
+}
+.Mac-section-2-h2-1{
+
+    h2{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: $center;
+    }
+    p{
+        font-size: 17px;
+        font-weight: 500;
+        color: rgb(2, 118, 226);
+        text-align: $center;
+        line-height: 125px;
+
+            &:hover{
+                text-decoration: $underline;
+            }
+    }
+
+}
+
+@media only screen and (min-width:1150px) and (max-width:1650px){
+.Mac-section-1 video{
+    height: 560px;
+
+        &:hover{
+            height: 620px;
+        }
+}
+}
+@media only screen and (min-width:920px) and (max-width:1149px){
+.Mac-section-1{
+
+    video{
+        height: 460px;
+    }
+}
+}
+@media only screen and (min-width:725px) and (max-width:919px){
+.Mac-section-1{
+
+    video{
+    height: 360px;
+    }
+}
+}
+@media only screen and (min-width:500px) and (max-width:724px){
+.Mac-section-1{
+
+    video{
+    height: 260px;
+    }
+}
+}
+@media only screen and (min-width:300px) and (max-width:499px){
+.Mac-section-1{
+
+        video{
+        height: 160px;
+        }
+        h2{
+        font-size: 35px;
+        }
+}
+}
+
+.Mac-section-2-targets{
+width: 320px;
+height: 270px;
+background-color: rgb(241, 241, 241);
+border-radius: 20px;
+margin: 60px 0 0 0;
+
+    &:hover{
+        background-color: rgb(234, 234, 234);
+    }
+    h3{
+        font-size: 26px;
+        margin: 10px 0 0 20px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.90);
+    }
+    p{
+        font-size: 17px;
+        margin: 10px 0 0 20px;
+    }
+}
+
+@for $i from 1 through 2 {
+.Mac-section-2-targets-img-#{$i} {
+    font-size: if($i == 1, 42px, 37px);
+    margin: if($i == 1, 30px 0 0 20px, null);
+    padding: if($i == 2, 0 0 0 270px, null);
+    color: rgba(0, 0, 0, if($i == 1, 0.95, 0.836));
+
+    &:hover {
+    color: if($i == 2, rgb(0, 0, 0), null);
+    }
+}
+}
+
+.Mac-section-3{
+background-color: $color-black;
+height: 1150px;
+text-align: $center;
+
+    h2{
+        font-size: 60px;
+        color: $color-white;
+    }
+}
+.Mac-section-3-mobile{
+display: $none;
+
+    p{
+        color: #86868b;
+    }
+    strong{
+        color: $color-white;
+    }
+    img{
+        width: 320px;
+    }
+}
+.Mac-section-3-galery-1{
+position: relative;
+background: url(../img/galery1.jpg);
+height: 420px;
+width: 700px;
+background-repeat: no-repeat;
+margin: 350px 0 0 600px;
+}
+.Mac-section-3-galery-2{
+position: relative;
+background: url(../img/galery2.png);
+height: 325px;
+width: 400px;
+background-repeat: no-repeat;
+top: 60%;
+left: 105%;
+}
+.Mac-section-3-galery-3{
+position: relative;
+background: url(../img/galery3.png);
+height: 370px;
+width: 400px;
+background-repeat: no-repeat;
+bottom: 60%;
+right: 35%;
+}
+.Mac-section-3-galery-4{
+position: relative;
+background: url(../img/galery4.png);
+height: 315px;
+width: 500px;
+background-repeat: no-repeat;
+bottom: 9%;
+right: 83%;
+}
+.Mac-section-3-galery-5{
+position: relative;
+background: url(../img/galery5.png);
+height: 240px;
+width: 320px;
+background-repeat: no-repeat;
+bottom: 58%;
+left: 56%;
+}
+.Mac-section-3-galery-6{
+position: relative;
+background: url(../img/galery6.png);
+height: 300px;
+width: 400px;
+background-repeat: no-repeat;
+bottom: 200%;
+left: 51%;
+}
+.Mac-section-3-galery-7{
+position: relative;
+background: url(../img/galery7.png);
+height: 300px;
+width: 360px;
+background-repeat: no-repeat;
+bottom: 45%;
+left: 45%;
+}
+.Mac-section-3-galery-8{
+position: relative;
+background: url(../img/galery8.png);
+height: 300px;
+width: 400px;
+background-repeat: no-repeat;
+bottom: 287%;
+right: 30%;
+}
+@media only screen and (min-width:1431px) and (max-width:1763px){
+.Mac-section-3-galery-2{
+    left: 75%;
+}
+.Mac-section-3-galery-4{
+    right: 50%;
+}
+.Mac-section-3-galery-1{
+    margin-left: 500px;
+}
+}
+@media only screen and (min-width:991px) and (max-width:1430px){
+.Mac-section-3-galery-2{
+    left: 55%;
+}
+.Mac-section-3-galery-4{
+    right: 30%;
+}
+.Mac-section-3-galery-6{
+    left: 30%;
+}
+.Mac-section-3-galery-1{
+    margin-left: 350px;
+}
+}
+@media only screen and (min-width:991px) and (max-width:1150px){
+.Mac-section-3-galery-1{
+    margin-left: 200px;
+}
+}
+@media only screen and (min-width:320px) and (max-width:990px){
+.Mac-section-3-galery{
+    display: $none;
+}
+.Mac-section-3{
+    height: 100%;
+}
+.Mac-section-3-mobile{
+    display: inline-block;
+    text-align: $center;
+}
+}

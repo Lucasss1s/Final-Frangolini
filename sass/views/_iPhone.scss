@@ -1,0 +1,375 @@
+@import '../utilities/variables';
+
+.iPhone-section-1{
+    background-color: $color-black;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+    text-align: $center; 
+
+        h1{
+            color: antiquewhite;
+            font-size: 25px;
+            font-weight: 500;
+        }
+}
+.iPhone-section-1-p-1{
+    color: #f56300;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+}
+.iPhone-section-1-img-1{
+    height: 120px;
+    padding: 15px 0 0 0 ;    
+}
+.iPhone-section-1-p-2{
+    color: $color-white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 0 0 0;
+}
+.iPhone-section-1-p-3{
+    color: $color-white;
+    background: #0071e3;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 62px;
+    height: 36px;
+    line-height: 36px;
+    margin: 25px 0 0 0;
+
+        &:hover{
+            background-color: #0682ff;
+        }
+}
+.iPhone-section-1-p-4{
+    color: rgb(41, 152, 255);
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    font-weight: 600;
+
+        &:hover{
+            text-decoration: $underline;
+        }
+}
+.iPhone-section-1-img-2{
+    height: 280px;
+    padding: 20px 0 0 0 ;
+}
+@media only screen and (min-width: 750px) and (max-width:1109px){
+    .iPhone-section-1-img-2{
+        height: 200px;
+    }
+    .iPhone-section-1{
+        height: 660px;
+    }
+}
+@media only screen and (min-width: 545px) and (max-width:749px){
+    .iPhone-section-1-img-2{
+        height: 150px;
+    }
+    .iPhone-section-1{
+        height: 570px;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width:544px){
+    .iPhone-section-1-img-2{
+        height: 125px;
+    }
+    .iPhone-section-1{
+        height: 530px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:429px){
+    .iPhone-section-1-img-2{
+        width: 320px;
+        height: 100px;
+    }
+    .iPhone-section-1{
+        height: 530px;
+    }
+}
+.iPhone-section-2{
+    display: grid;
+    justify-content: $center;
+}
+.iPhone-section-2-img-1{
+    background: url(../img/modeloIphone.jpg);
+    height: 800px;
+    width: 1412px;
+    background-repeat: no-repeat;
+    background-position: $center;
+    border-radius: 30px;
+}
+.iphone-section-2-text{
+    padding: 300px 0 0 200px;
+}
+.iPhone-section-2-p-1{
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.iPhone-section-2-p-2{
+    color: $color-white;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-2-p-3{
+    color: $color-white;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 0 0 0 0;
+}
+.iPhone-section-2-p-4{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: $center;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 980px;
+    background-color: $color-white;
+    margin: 10px 0 0 0;
+}
+.iPhone-section-2-p-4:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+@media only screen and (min-width:1110px) and (max-width:1500px){
+    .iPhone-section-2-img-1{
+        height: 700px;
+        width: 1100px;
+    }
+    .iphone-section-2-text{
+        padding: 250px 0 0 150px;
+    }
+}
+@media only screen and (min-width: 910px) and (max-width:1109px){
+    .iPhone-section-2-img-1{
+        height: 600px;
+        width: 900px;
+    }
+    .iphone-section-2-text{
+        padding: 200px 0 0 100px;
+    }
+}
+@media only screen and (min-width: 620px) and (max-width:909px){
+    .iPhone-section-2-img-1{
+        background: url(../img/modeloIphoneMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: $center;
+        border-radius: 30px;
+        width: 600px; 
+        height: 582px;
+    }
+    .iphone-section-2-text{
+        padding: 15px 0 0 150px;
+    }
+    .iPhone-section-2-p-1{
+        margin: 0 0 0 55px;
+    }
+    .iPhone-section-2-p-4{
+        margin: 10px 0 0 80px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:619px){
+    .iPhone-section-2-img-1{
+        background: url(../img/modeloIphoneMobile2.JPG);
+        background-repeat: no-repeat;
+        background-position: $center;
+        border-radius: 30px;
+        width: 320px; 
+        height: 480px;
+    }
+    .iphone-section-2-text{
+        padding: 15px 0 0 50px;
+    }
+    .iPhone-section-2-p-1{
+        font-size: 18px;
+        margin: 0 0 0 40px;
+    }
+    .iPhone-section-2-p-2{
+        font-size: 35px;
+    }
+    .iPhone-section-2-p-3{
+        font-size: 35px;
+    }
+    .iPhone-section-2-p-4{
+        margin: 10px 0 0 45px;
+    }
+}
+
+.iPhone-section-3{
+
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.904);
+        text-align: $center;
+        padding: 70px 0 0 0;
+    }
+}
+.iPhone-section-3-galery{
+    padding: 70px 0 0 0;
+    display: grid;
+    grid-template-areas: 
+    "article1 article2 article3 article4";    
+    grid-gap: 60px; 
+    justify-content: $center;
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .iPhone-section-3-galery{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+    "article1 article2" 
+    "article3 article4"; 
+    }
+}
+@media only screen and (min-width:100px) and (max-width:499px){
+    .iPhone-section-3 h2{
+        font-size: 35px;
+    }
+    .iPhone-section-3-galery{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+    "article1"
+    "article2" 
+    "article3"
+    "article4"; 
+    }
+}
+
+.iPhone-section-3-galery-article{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+    text-align: $center; 
+}
+
+$areas1: (
+    1: article1,
+    2: article2,
+    3: article3,
+    4: article4
+);
+@for $i from 1 through length($areas1) {
+    $key: nth(map-keys($areas1), $i);
+    $area: map-get($areas1, $key);
+    
+    .iPhone-section-3-galery-article-#{$key} {
+        grid-area: $area;
+    }
+}
+
+.iPhone-section-3-galery-article-img-1{
+    width: 194px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-4-img-1{
+    width: 151px;
+    height: 257px;
+}
+.iPhone-section-3-galery-article-1-img-2{
+    width: 68px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-2-img-2{
+    width: 86px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-3-img-2{
+    width: 104px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-4-img-2{
+    width: 50px;
+    height: 14px;
+    margin: 15px 0 0 0;
+}
+.iPhone-section-3-galery-article-h3-1{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+}
+
+.iPhone-section-3-galery-article-p-1{
+    font-size: 13px;
+    color: rgb(231, 156, 15);
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-p-2{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    padding: 10px 0 0 0;
+}
+.iPhone-section-3-galery-article-p-3{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    padding: 40px 0 0 0;
+}
+.iPhone-section-3-galery-article-p-4{
+    color: $color-white;
+    background: #0071e3;
+    text-align: $center;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 980px;
+    width: 47px;
+    height: 20px;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+
+        &:hover{
+            background: #0281ff;
+        }
+}
+.iPhone-section-3-galery-article-p-5{
+    color: rgb(2, 118, 226);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 0 0 0;
+
+        &:hover{
+            text-decoration: $underline;
+        }
+}
+.iPhone-section-3-galery-article-p-6{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+}
+.iPhone-section-3-galery-article-p-7{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+
+.iPhone-section-3-galery-article-div-1{
+    background-color: rgba(128, 128, 128, 0.795);
+    width: 194px;
+    height: 1px;
+    margin: 40px 0 40px 0;
+}
+.iPhone-section-3-galery-article-4-p-3{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+}
+.iPhone-section-3-galery-article-4-p-4{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    padding: 15px 0 0 0;
+}
